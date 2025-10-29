@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-weight: 300; /* Light */
+    src: url('fonts/GmarketSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-weight: 500; /* Medium */
+    src: url('fonts/GmarketSansMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-weight: 700; /* Bold */
+    src: url('fonts/GmarketSansBold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Gmarket Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slideUp {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
